@@ -1,0 +1,399 @@
+/* -----Global design----- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  list-style: none;
+}
+
+.btn {
+  margin: 1rem 0;
+  background: tomato;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.title h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10px 0;
+  color: black;
+}
+
+.container {
+  padding: 0 1%;
+  width: 100%;
+}
+
+/* -------global design Emd------ */
+
+/* ---------Header start-------- */
+.container .home {
+  background: linear-gradient(#dbddda17, rgba(3, 3, 58, 0.815)), url(img/px3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.home .header {
+  background-color: rgba(77, 73, 73, 0.952);
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.home .header .portfolio {
+  padding: 1rem;
+  background-color: rgba(88, 84, 84, 0.966);
+}
+
+.home .header .portfolio h2 {
+  font-size: 2rem;
+  color: rgb(219, 205, 205);
+}
+
+.home .header .portfolio span {
+  color: rgb(209, 162, 162);
+}
+
+.home .header .menu_icon {
+  display: none;
+  cursor: pointer;
+}
+
+.home .header .menu_icon i {
+  font-size: 2rem;
+}
+
+.home .header .navbar {
+  padding: 1rem;
+}
+.home .header .navbar .name{
+  display: none;
+}
+
+.home .header .navbar ul li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.home .header .navbar ul li a {
+  color: rgba(211, 201, 201, 0.89);
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.home .header .navbar ul li a:hover {
+  color: orangered;
+}
+
+/* --------Profile section start------- */
+.home .profile {
+  max-width: 700px;
+  margin: 30px auto;
+  background-color: rgba(17, 14, 14, 0.671);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 5px;
+  padding: 2% 3%;
+  text-align: center;
+}
+
+.profile_img {
+  text-align: right;
+  padding: 3rem 1rem;
+
+}
+
+.profile_img img {
+  width: 180px;
+  border-radius: 50%;
+}
+
+.profile_content {
+  width: fit-content;
+  text-align: center;
+  display: block;
+  margin: 3rem 0;
+
+}
+
+.profile_content h1 {
+  padding: 20px 0;
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(209, 205, 206);
+  text-align: left;
+}
+
+.profile_content p {
+  font-size: 25px;
+  color: rgb(218, 98, 118);
+  text-align: left;
+}
+
+.social-link {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.social-link a {
+  background-color: rgb(185, 193, 201);
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid rgb(201, 194, 194);
+  margin-right: 10px;
+  transition: all 0.4s linear;
+}
+
+.profile_content .social-link a:hover {
+  background-color: rgb(201, 67, 90);
+}
+
+.profile_content .social-link a i {
+  font-size: 1.5rem;
+  color: black;
+}
+
+/*--------- Main card -----------*/
+.main_card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 100%;
+  overflow: hidden;
+  height: auto;
+  padding: 10px 0;
+  background: rgb(218, 210, 210);
+}
+
+.about {
+  display: block;
+  flex-basis: 50%;
+}
+
+.about_content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+
+}
+
+.about_disc {
+  flex-basis: 70%;
+  padding: 5px;
+  text-align: left;
+}
+
+.about_disc span {
+  font-size: 18px;
+  color: rgba(7, 3, 4, 0.952);
+  font-weight: 200;
+
+}
+
+.about_disc p {
+  font-size: 20px;
+  padding: 0.5rem 0;
+}
+
+/* ------skills--------- */
+.skil {
+  flex-basis: 40%;
+  padding: 0 10px;
+  background-color: rgba(232, 225, 236, 0.726);
+  border-radius: 10px;
+  border-left: 1.5px solid black;
+  border-right: 1.5px solid black;
+}
+
+.skill_item div {
+  font-size: 20px;
+  display: inline-block;
+  background-color: rgba(95, 89, 93, 0.5);
+  width: auto;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 2px;
+  /* text-align: center; */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.skill_item div:hover {
+  background-color: rgb(207, 87, 107);
+  color: antiquewhite;
+}
+
+/* -----Swiper----- */
+.swiper_container {
+  background: rgb(206, 196, 196);
+  padding: 0 3rem;
+}
+
+.swiper {
+  height: 350px;
+  padding: 10px 0;
+  /* margin: 10px 0; */
+}
+
+.swiper-wrapper {
+  text-align: center;
+  margin-top: 5px 0;
+
+}
+
+.swiper-slide {
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+
+
+}
+
+.swiper-slide img {
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.slide_content {
+  position: absolute;
+  bottom: 100px;
+  left: 40px;
+
+}
+
+.swiper-slide .slide_content .btn {
+  background: rgba(238, 227, 226, 0.836);
+  border-radius: 5px;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: 0.5s linear;
+
+}
+
+.slide_content .btn:hover {
+  color: whitesmoke;
+  background: green;
+}
+
+/* ---------Contact---------- */
+
+.contact_container {
+  background: rgb(199, 189, 189);
+}
+
+.contact_container .title h2 {
+  font-size: 1.5rem;
+  color: black;
+  border-bottom: 1px solid;
+  width: 10%;
+  margin: 0 auto;
+}
+
+.contact_container .contact {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
+  background: rgb(199, 189, 189);
+  padding: 1rem 0;
+
+}
+
+
+
+.address {
+  padding: 2rem 1rem;
+}
+
+.address h2 {
+  font-size: 1.5rem;
+  padding: 3px 0;
+}
+
+.address .map iframe {
+  padding: 1rem 0;
+  width: 100%;
+}
+
+/* ------------Form--------- */
+.form {
+
+  padding: 10px 5px;
+  width: 100%;
+  border: 1px solid whitesmoke;
+}
+
+.form label {
+  color: rgba(1, 8, 14, 0.986);
+  font-size: 1.5rem;
+}
+
+.form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 30px;
+  padding: 5px;
+  font-size: 18px;
+  color: rgba(10, 10, 10, 0.918);
+  background-color: rgba(222, 240, 241, 0.609);
+}
+
+.form textarea {
+  resize: none;
+  color: rgba(20, 19, 19, 0.993);
+  font-size: 18px;
+  outline: none;
+  background-color: rgba(224, 233, 232, 0.596);
+  width: 100%;
+}
+
+.quick_links ul li {
+  padding: 1rem;
+
+}
+
+.quick_links ul li a {
+  font-size: 1.5rem;
+  color: black;
+  transition: 0.3s linear;
+}
+
+.quick_links ul li a:hover {
+
+  color: orangered;
+}
+
+/*------------------ Footer----------- */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  background: rgba(6, 7, 7, 0.418);
+}
+
+.footer p {
+  font-size: 1rem;
+}
+
+.footer span {
+  color: rgb(24, 29, 53);
+}
